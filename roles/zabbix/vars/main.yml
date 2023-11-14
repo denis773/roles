@@ -1,0 +1,3 @@
+---
+# vars file for zabbix
+zabbix_server_version: "6.5"

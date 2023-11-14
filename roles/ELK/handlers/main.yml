@@ -1,0 +1,17 @@
+---
+# handlers file for ELK
+- name: Restart Nginx
+  systemd:
+    name: nginx
+    state: restarted
+
+- name: Restart Kibana
+  systemd:
+    name: kibana
+    state: restarted
+
+- name: Restart Logstash
+  systemd:
+    name: logstash
+    state: restarted
+

@@ -1,0 +1,10 @@
+- name: Configure Web Hosting Server
+  hosts: all
+  become: true
+  become_user: root
+  roles:
+    - ANMP
+    - ELK
+    - monitoring_pometheus_grafana
+    - zabbix
+    - mongodb
